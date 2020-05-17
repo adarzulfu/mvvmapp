@@ -43,7 +43,7 @@ dependencies {
     //Lifecycle
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "android.arch.lifecycle:extensions:$arch_lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"

@@ -7,14 +7,17 @@ import com.adar.mvvm.base.model.EmployeeInformation
 import com.adar.mvvm.base.usacase.UseCase
 import com.adar.mvvm.base.viewmodel.BaseAndroidViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
  * Created by Zülfü Adar on 01/05/2020
  */
-class EmployeeViewModel(
+class EmployeeViewModel @Inject constructor(
     application: Application
 ) : BaseAndroidViewModel(application) {
-    private val usaCase: FetchEmployeeUsaCase = FetchEmployeeUsaCase()
+
+    @Inject
+    lateinit var usaCase: FetchEmployeeUsaCase
 
     val employeeList = MutableLiveData<List<EmployeeInformation>>()
 

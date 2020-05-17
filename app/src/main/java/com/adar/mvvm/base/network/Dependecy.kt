@@ -20,7 +20,7 @@ object Dependecy {
 
     private val okHttpClient: OkHttpClient by lazy { OkHttpClient.Builder().build() }
 
-    private val repository: Retrofit by lazy {
+    val repository: Retrofit by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
