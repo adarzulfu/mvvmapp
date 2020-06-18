@@ -9,10 +9,12 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
+import javax.inject.Singleton
 
 /**
  * Created by Zülfü Adar on 17/05/2020
  */
+@Singleton
 @Component(modules = [AndroidInjectionModule::class, ActivityModule::class, NetworkModule::class, ViewModelModule::class])
 interface AppComponent : AndroidInjector<MyAppClass> {
 

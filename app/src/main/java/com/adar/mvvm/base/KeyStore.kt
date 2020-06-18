@@ -1,4 +1,4 @@
-package com.adar.mvvm.base.network
+package com.adar.mvvm.base
 
 /**
  * Created by Zülfü Adar on 01/05/2020
