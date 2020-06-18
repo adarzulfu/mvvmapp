@@ -18,6 +18,7 @@ import javax.inject.Singleton
 @Component(modules = [AndroidInjectionModule::class, ActivityModule::class, NetworkModule::class, ViewModelModule::class])
 interface AppComponent : AndroidInjector<MyAppClass> {
 
+
     @Component.Builder
     interface Builder {
         @BindsInstance
