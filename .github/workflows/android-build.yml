@@ -1,10 +1,7 @@
 
 name: Android Feature Branch CI
 
-on:
-  pull_request:
-    branches:
-      - '*'
+on: pull_request
 
 jobs:
   test:
