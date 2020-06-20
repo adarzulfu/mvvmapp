@@ -1,7 +1,12 @@
 
-name: Android Feature Branch CI
+name: Github Actions Pipeline
 
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - master
+      - develop
+      - 'releases/**'
 
 jobs:
   test:
@@ -15,10 +20,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Test
-        run: ./gradlew buildDebug  --stacktrace
-      - name: Test
-        run: ./gradlew buildRelease --stacktrace
       - name: Run Detekt
         run: ./gradlew detekt --stacktrace
       - name: Run Lint
