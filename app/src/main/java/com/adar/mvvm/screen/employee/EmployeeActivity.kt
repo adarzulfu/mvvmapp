@@ -18,6 +18,7 @@ class EmployeeActivity : BaseActivity<EmployeeViewModel>() {
         observeData()
         viewModel.fetchEmployeeViewModel()
 
+
     }
 
     private fun observeData() {
