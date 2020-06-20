@@ -17,6 +17,7 @@ class EmployeeActivity : BaseActivity<EmployeeViewModel>() {
         setContentView(R.layout.activity_employee)
         observeData()
         viewModel.fetchEmployeeViewModel()
+
     }
 
     private fun observeData() {
