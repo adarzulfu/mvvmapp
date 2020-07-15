@@ -56,7 +56,6 @@
     <!-- region Person Detail -->
     <string name="person_detail_message_born_date">Born: %s</string>
     <string name="person_detail_message_born_place">Born: in %s</string>
-    <string name="person_detail_message_born_date_and_place">Born: %1s in %2s</string>
     <string name="person_detail_message_see_full_bio">See full bio >></string>
     <string name="person_detail_message_see_less">See less >></string>
     <!-- endregion -->
