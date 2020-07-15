@@ -37,5 +37,5 @@ jobs:
         with:
           appName: zulfuadar/Test
           token: ${{secrets.APP_CENTER_TOKEN}}
-          group: Lanistar
+          group: Collaborators
           file: app-release.apk
