@@ -20,6 +20,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     signingConfigs {
         release {
             def fileProps = rootProject.file('keystore.properties')
